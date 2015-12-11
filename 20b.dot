@@ -1,0 +1,26 @@
+digraph A{
+  A -> A [label="l,r,b"];
+  A -> D [label="l,r"];
+  A -> B [label=b];
+  A -> F [label=b];
+  B -> A [label=l];
+  B -> B [label="l,b"];
+  B -> E [label=r];
+  B -> C [label=b];
+  B -> D [label=b];
+  C -> B [label=l];
+  C -> F [label="r,b"];
+  C -> E [label="r,b"];
+  D -> B [label=l];
+  D -> F [label=r];
+  D -> A [label=b];
+  E -> B [label="l,b"];
+  E -> C [label="l,b"];
+  E -> F [label=r];
+  F -> C [label=l];
+  F -> F [label="r,b"];
+  F -> A [label=r];
+  F -> C [label=b];
+  F -> D [label=b];
+  F -> E [label=b];
+}
